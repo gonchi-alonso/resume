@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: block;
+    background-color: #778899;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Links on top */
+.top{
+    float: right;
+}
+
+.top li{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.top li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.top li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.top li.activated a{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Logo Properties */
+
+.logo img{
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
+
+/* Main function properties */
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 9%;
+}
+
+[data-carousel="container"] {
+  overflow: hidden;
+  position: relative;
+  width: var(--carousel-width);
+}
+
+[data-carousel="slides"] {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(var(--carousel-width));
+  scroll-snap-type: mandatory;
+}
+
+[data-carousel="slides"]::-webkit-scrollbar {
+  display: none;
+}
+
+[data-carousel="slide"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--carousel-width);
+  height: var(--carousel-height);
+  background-color: grey;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+[data-carousel="slide"] {
+  margin-right: 1rem;
+}
+
+[data-carousel="slide"]:last-of-type {
+ margin-right :0;
+}
+
+[data-carousel="controls"]{
+  position: absolute;
+  bottom: 30px;
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide-img{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  object-fit: cover;
+}
+
+.carousel-control {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--button);
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  padding: 0.3rem;
+  align-content: center;
+}
+
+.carousel-control:hover,
+#slide-1:target ~ div > [data-carousel*="1-btn"]:visited,
+#slide-2:target ~ div > [data-carousel*="2-btn"]:visited,
+#slide-3:target ~ div > [data-carousel*="3-btn"]:visited,
+#slide-4:target ~ div > [data-carousel*="4-btn"]:visited,
+#slide-5:target ~ div > [data-carousel*="5-btn"]:visited {
+    background-color: var(--selected);
+}
+
+/*
+boring stuff - not needed for carousel
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+  font-family: -apple-system-headline, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-rendering: geometricPrecision;
+  font-size: 16px;
+  --button: #FF6D1D;
+  --selected: #FFA51D;
+  --carousel-height: 500px;
+  --carousel-width: 800px;
+}
+
+html,
+body {
+  margin:0;
+  padding:0;
+  background-color: #E1DEDE;
+}
+
+article {
+  margin: 20px auto 0 auto;
+  box-shadow: 0 0 10px 0 #26303D;
+}

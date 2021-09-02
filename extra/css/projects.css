@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: block;
+    background-color: #778899;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Links on top */
+.top{
+    float: right;
+}
+
+.top li{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.top li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.top li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.top li.activated a{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Logo Properties */
+
+.logo img{
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
+
+/* Main function properties */
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Boxes Properties */
+.boxes{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.expe{
+    text-align: center;
+}
+
+.expe li{
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    margin-left: 50px;
+}
+
+.expe li a{
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.expe img{
+  width: 350px;
+}
