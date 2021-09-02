@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: block;
+    background-color: #778899;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/* Links on top */
+.top{
+    float: right;
+}
+
+.top li{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.top li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.top li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.top li.activated a{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Logo Properties */
+
+.logo img{
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
+
+/* Main function properties */
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Title Properties*/
+
+.me{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.me h1{
+  color: #fff;
+  font-size: 50px;
+  font-family: Microsoft Tai Le;
+}
+
+.me p{
+  color: #fff;
+  font-family: Microsoft Tai Le;
+  text-align: center;
+}
+
+.me img{
+    float: none;
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+    padding-left: 20%;
+}
+
+.links{
+  text-align: center;
+}
+
+.links li{
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.links li a{
+  border: none;
+}
+
+.links li img{
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.scroll p{
+    font-size: 20px;
+    padding: 50px;
+}
+
+.scroll a{
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+arrow {
+  border: solid white;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* ABOUT ME SECTION */
+
+about{
+    background-color: #c5d1dd;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.main2{
+    max-width: 700px;
+    margin: auto;
+}
+
+.aboutme h1{
+  padding-top: 40%;
+  text-align: center;
+}
+
+.aboutme p{
+  padding-top: 3%;
+  text-align: center;
+}
+
+/* MY SKILLS SECTION */
+
+skills{
+  display: block;
+  background-color: #96ABBD;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.main3{
+  max-width: 700px;
+  margin: auto;
+  padding-top: 11%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.myskills{
+  grid-column: 1;
+}
+
+.main3 li{
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main3 li::before{
+  content: " ";
+  position: absolute;
+  width: 80%;
+  height: 30px;
+  left: 0;
+  background-color: #FBFFC0;
+  border-radius: 10px;
+}
+
+.main3 li::after{
+  position: absolute;
+  width: 0;
+  left: 0;
+  height: 30px;
+  background-color: #E8F073;
+  border-radius: 10px;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  text-indent: 10px;
+}
+
+.main3 li.html:after{
+    animation-name: html;
+    content: "Python";
+}
+
+@keyframes html {
+    to{
+        width: 70%;
+    }
+}
+
+.main3 li.css:after{
+    animation-name: css;
+    content: "HTML";
+    text-align: inherit;
+}
+
+@keyframes css {
+    to{
+        width: 65%;
+    }
+}
+
+.main3 li.python:after{
+    animation-name: python;
+    content: "R";
+}
+
+@keyframes python {
+    to{
+        width: 50%;
+    }
+}
+
+.main3 li.c:after{
+    animation-name: c;
+    content: "C/C++";
+}
+
+@keyframes c {
+    to{
+        width: 50%;
+    }
+}
+
+.skillexpl{
+  grid-column: 2;
+
+}
+
+oskills{
+  display: block;
+  background-color: #c5d1dd;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.main4{
+  max-width: 700px;
+  margin: auto;
+  padding-top: 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 13%;
+}
+
+.oskillexpl{
+  grid-column: 1;
+}
+
+.oskillexpl p{
+  position: relative;
+  list-style: none;
+}
+
+.oskillexpl ul{
+  padding-top: 15px;
+}
+
+.myotherskills{
+  grid-column: 2;
+}
+
+.myotherskills li{
+  position: relative;
+  list-style: none;
+  padding-top: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.myotherskills li img{
+  height: 50px;
+  width: auto;
+  padding-left: 35px;
+}
